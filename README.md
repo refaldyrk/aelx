@@ -32,6 +32,7 @@ Jalankan perintah `aelx` dengan flag-flag berikut:
 - `-j`: Opsi opsional untuk mengeluarkan data dalam format JSON. Default: `false`.
 - `--o`: Opsi opsional untuk menentukan nama file keluaran dalam format JSON. Default: `aelx.json`.
 - `-e`: Opsi opsional untuk mengeluarkan data sebagai variabel lingkungan. Default: `false`.
+- -yaml: Opsi opsional untuk mengeluarkan data dalam format YAML. Default: false.
 
 ### Contoh Penggunaan
 
@@ -77,6 +78,16 @@ Jalankan perintah `aelx` dengan flag-flag berikut:
    Contoh:
    ```shell
    aelx -k hello --f config.aelx -e true
+   ```
+5. Mengeluarkan data sebagai yaml file:
+
+   ```shell
+   aelx -k <nama-kunci> --f <nama-file.aelx> -yaml true
+   ```
+
+   Contoh:
+   ```shell
+   aelx -k hello --f config.aelx -yaml true
    ```
 
 ## Format File `.aelx`
