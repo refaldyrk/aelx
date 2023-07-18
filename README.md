@@ -33,6 +33,7 @@ Jalankan perintah `aelx` dengan flag-flag berikut:
 - `--o`: Opsi opsional untuk menentukan nama file keluaran dalam format JSON. Default: `aelx.json`.
 - `-e`: Opsi opsional untuk mengeluarkan data sebagai variabel lingkungan. Default: `false`.
 - -yaml: Opsi opsional untuk mengeluarkan data dalam format YAML. Default: false.
+- -toml: Opsi opsional untuk convert ke dalam file toml
 
 ### Contoh Penggunaan
 
@@ -88,6 +89,16 @@ Jalankan perintah `aelx` dengan flag-flag berikut:
    Contoh:
    ```shell
    aelx -k hello --f config.aelx -yaml true
+   ```
+6. Mengeluarkan data sebagai toml file:
+
+   ```shell
+   aelx -k <nama-kunci> --f <nama-file.aelx> -toml true
+   ```
+
+   Contoh:
+   ```shell
+   aelx -k hello --f config.aelx -toml true
    ```
 
 ## Format File `.aelx`
