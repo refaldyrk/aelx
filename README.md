@@ -34,6 +34,7 @@ Jalankan perintah `aelx` dengan flag-flag berikut:
 - `-e`: Opsi opsional untuk mengeluarkan data sebagai variabel lingkungan. Default: `false`.
 - -yaml: Opsi opsional untuk mengeluarkan data dalam format YAML. Default: false.
 - -toml: Opsi opsional untuk convert ke dalam file toml
+- -xml: Opsi opsional untuk convert ke dalam file xml
 
 ### Contoh Penggunaan
 
@@ -99,6 +100,16 @@ Jalankan perintah `aelx` dengan flag-flag berikut:
    Contoh:
    ```shell
    aelx -k hello --f config.aelx -toml true
+   ```
+7. Mengeluarkan data sebagai xml file:
+
+   ```shell
+   aelx -k <nama-kunci> --f <nama-file.aelx> -xml true
+   ```
+
+   Contoh:
+   ```shell
+   aelx -k hello --f config.aelx -xml true
    ```
 
 ## Format File `.aelx`
